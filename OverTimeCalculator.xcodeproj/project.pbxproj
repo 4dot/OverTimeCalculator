@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10A77279221D12A000A457AB /* OTCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A77278221D12A000A457AB /* OTCAppDelegate.swift */; };
+		10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7727A221D12A000A457AB /* TimerViewController.swift */; };
+		10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7727C221D12A000A457AB /* HistoryViewController.swift */; };
+		10A77280221D12A000A457AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A7727E221D12A000A457AB /* Main.storyboard */; };
+		10A77282221D12A300A457AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A77281221D12A300A457AB /* Assets.xcassets */; };
+		10A77285221D12A300A457AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A77283221D12A300A457AB /* LaunchScreen.storyboard */; };
+		10A77290221D12A400A457AB /* OverTimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7728F221D12A400A457AB /* OverTimeCalculatorTests.swift */; };
+		10A7729B221D12A400A457AB /* OverTimeCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7729A221D12A400A457AB /* OverTimeCalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10A7728C221D12A400A457AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10A7726D221D12A000A457AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10A77274221D12A000A457AB;
+			remoteInfo = OverTimeCalculator;
+		};
+		10A77297221D12A400A457AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10A7726D221D12A000A457AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10A77274221D12A000A457AB;
+			remoteInfo = OverTimeCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10A77275221D12A000A457AB /* OverTimeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverTimeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A77278221D12A000A457AB /* OTCAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTCAppDelegate.swift; sourceTree = "<group>"; };
+		10A7727A221D12A000A457AB /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		10A7727C221D12A000A457AB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		10A7727F221D12A000A457AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10A77281221D12A300A457AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10A77284221D12A300A457AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10A77286221D12A300A457AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A7728B221D12A400A457AB /* OverTimeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A7728F221D12A400A457AB /* OverTimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverTimeCalculatorTests.swift; sourceTree = "<group>"; };
+		10A77291221D12A400A457AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A77296221D12A400A457AB /* OverTimeCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A7729A221D12A400A457AB /* OverTimeCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverTimeCalculatorUITests.swift; sourceTree = "<group>"; };
+		10A7729C221D12A400A457AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10A77272221D12A000A457AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A77288221D12A400A457AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A77293221D12A400A457AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10A7726C221D12A000A457AB = {
+			isa = PBXGroup;
+			children = (
+				10A77277221D12A000A457AB /* OverTimeCalculator */,
+				10A7728E221D12A400A457AB /* OverTimeCalculatorTests */,
+				10A77299221D12A400A457AB /* OverTimeCalculatorUITests */,
+				10A77276221D12A000A457AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10A77276221D12A000A457AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10A77275221D12A000A457AB /* OverTimeCalculator.app */,
+				10A7728B221D12A400A457AB /* OverTimeCalculatorTests.xctest */,
+				10A77296221D12A400A457AB /* OverTimeCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10A77277221D12A000A457AB /* OverTimeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				10A77278221D12A000A457AB /* OTCAppDelegate.swift */,
+				10A7727A221D12A000A457AB /* TimerViewController.swift */,
+				10A7727C221D12A000A457AB /* HistoryViewController.swift */,
+				10A7727E221D12A000A457AB /* Main.storyboard */,
+				10A77281221D12A300A457AB /* Assets.xcassets */,
+				10A77283221D12A300A457AB /* LaunchScreen.storyboard */,
+				10A77286221D12A300A457AB /* Info.plist */,
+			);
+			path = OverTimeCalculator;
+			sourceTree = "<group>";
+		};
+		10A7728E221D12A400A457AB /* OverTimeCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				10A7728F221D12A400A457AB /* OverTimeCalculatorTests.swift */,
+				10A77291221D12A400A457AB /* Info.plist */,
+			);
+			path = OverTimeCalculatorTests;
+			sourceTree = "<group>";
+		};
+		10A77299221D12A400A457AB /* OverTimeCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10A7729A221D12A400A457AB /* OverTimeCalculatorUITests.swift */,
+				10A7729C221D12A400A457AB /* Info.plist */,
+			);
+			path = OverTimeCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10A77274221D12A000A457AB /* OverTimeCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A7729F221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculator" */;
+			buildPhases = (
+				10A77271221D12A000A457AB /* Sources */,
+				10A77272221D12A000A457AB /* Frameworks */,
+				10A77273221D12A000A457AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverTimeCalculator;
+			productName = OverTimeCalculator;
+			productReference = 10A77275221D12A000A457AB /* OverTimeCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10A7728A221D12A400A457AB /* OverTimeCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A772A2221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorTests" */;
+			buildPhases = (
+				10A77287221D12A400A457AB /* Sources */,
+				10A77288221D12A400A457AB /* Frameworks */,
+				10A77289221D12A400A457AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10A7728D221D12A400A457AB /* PBXTargetDependency */,
+			);
+			name = OverTimeCalculatorTests;
+			productName = OverTimeCalculatorTests;
+			productReference = 10A7728B221D12A400A457AB /* OverTimeCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10A77295221D12A400A457AB /* OverTimeCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A772A5221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorUITests" */;
+			buildPhases = (
+				10A77292221D12A400A457AB /* Sources */,
+				10A77293221D12A400A457AB /* Frameworks */,
+				10A77294221D12A400A457AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10A77298221D12A400A457AB /* PBXTargetDependency */,
+			);
+			name = OverTimeCalculatorUITests;
+			productName = OverTimeCalculatorUITests;
+			productReference = 10A77296221D12A400A457AB /* OverTimeCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10A7726D221D12A000A457AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = 4Dot;
+				TargetAttributes = {
+					10A77274221D12A000A457AB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					10A7728A221D12A400A457AB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 10A77274221D12A000A457AB;
+					};
+					10A77295221D12A400A457AB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 10A77274221D12A000A457AB;
+					};
+				};
+			};
+			buildConfigurationList = 10A77270221D12A000A457AB /* Build configuration list for PBXProject "OverTimeCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10A7726C221D12A000A457AB;
+			productRefGroup = 10A77276221D12A000A457AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10A77274221D12A000A457AB /* OverTimeCalculator */,
+				10A7728A221D12A400A457AB /* OverTimeCalculatorTests */,
+				10A77295221D12A400A457AB /* OverTimeCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10A77273221D12A000A457AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A77285221D12A300A457AB /* LaunchScreen.storyboard in Resources */,
+				10A77282221D12A300A457AB /* Assets.xcassets in Resources */,
+				10A77280221D12A000A457AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A77289221D12A400A457AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A77294221D12A400A457AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10A77271221D12A000A457AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */,
+				10A77279221D12A000A457AB /* OTCAppDelegate.swift in Sources */,
+				10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A77287221D12A400A457AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A77290221D12A400A457AB /* OverTimeCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A77292221D12A400A457AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A7729B221D12A400A457AB /* OverTimeCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10A7728D221D12A400A457AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10A77274221D12A000A457AB /* OverTimeCalculator */;
+			targetProxy = 10A7728C221D12A400A457AB /* PBXContainerItemProxy */;
+		};
+		10A77298221D12A400A457AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10A77274221D12A000A457AB /* OverTimeCalculator */;
+			targetProxy = 10A77297221D12A400A457AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10A7727E221D12A000A457AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10A7727F221D12A000A457AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10A77283221D12A300A457AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10A77284221D12A300A457AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10A7729D221D12A400A457AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10A7729E221D12A400A457AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10A772A0221D12A400A457AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE4Q22B3LN;
+				INFOPLIST_FILE = OverTimeCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4dot.OverTimeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		10A772A1221D12A400A457AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE4Q22B3LN;
+				INFOPLIST_FILE = OverTimeCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4dot.OverTimeCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		10A772A3221D12A400A457AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE4Q22B3LN;
+				INFOPLIST_FILE = OverTimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-Dot.OverTimeCalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTimeCalculator.app/OverTimeCalculator";
+			};
+			name = Debug;
+		};
+		10A772A4221D12A400A457AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE4Q22B3LN;
+				INFOPLIST_FILE = OverTimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-Dot.OverTimeCalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTimeCalculator.app/OverTimeCalculator";
+			};
+			name = Release;
+		};
+		10A772A6221D12A400A457AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE4Q22B3LN;
+				INFOPLIST_FILE = OverTimeCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-Dot.OverTimeCalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OverTimeCalculator;
+			};
+			name = Debug;
+		};
+		10A772A7221D12A400A457AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE4Q22B3LN;
+				INFOPLIST_FILE = OverTimeCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-Dot.OverTimeCalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OverTimeCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10A77270221D12A000A457AB /* Build configuration list for PBXProject "OverTimeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A7729D221D12A400A457AB /* Debug */,
+				10A7729E221D12A400A457AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10A7729F221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A772A0221D12A400A457AB /* Debug */,
+				10A772A1221D12A400A457AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10A772A2221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A772A3221D12A400A457AB /* Debug */,
+				10A772A4221D12A400A457AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10A772A5221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A772A6221D12A400A457AB /* Debug */,
+				10A772A7221D12A400A457AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10A7726D221D12A000A457AB /* Project object */;
+}
