@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OverTimeCalculator.xcodeproj">
+      location = "self:/Users/cpark/Documents/private/github/OverTimeMaster/OverTimeMaster.xcodeproj">
    </FileRef>
 </Workspace>

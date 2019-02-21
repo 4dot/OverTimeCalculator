@@ -15,6 +15,10 @@
 		10A77285221D12A300A457AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A77283221D12A300A457AB /* LaunchScreen.storyboard */; };
 		10A77290221D12A400A457AB /* OverTimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7728F221D12A400A457AB /* OverTimeCalculatorTests.swift */; };
 		10A7729B221D12A400A457AB /* OverTimeCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7729A221D12A400A457AB /* OverTimeCalculatorUITests.swift */; };
+		39DCD7157DA83A249ABAE528 /* Pods_OverTimeMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3C00774116B1C27D55D923 /* Pods_OverTimeMaster.framework */; };
+		7EE775237A41DE5B03DDEDF9 /* Pods_OverTimeMasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F69E9695B15184F19C143F /* Pods_OverTimeMasterTests.framework */; };
+		83333C8A109B8855E452EFD8 /* Pods_OverTimeMasterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA5B2E18ACCE3630CA3207 /* Pods_OverTimeMasterUITests.framework */; };
+		CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10A77275221D12A000A457AB /* OverTimeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverTimeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A77275221D12A000A457AB /* OverTimeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverTimeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A77278221D12A000A457AB /* OTCAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTCAppDelegate.swift; sourceTree = "<group>"; };
 		10A7727A221D12A000A457AB /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		10A7727C221D12A000A457AB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -43,12 +47,22 @@
 		10A77281221D12A300A457AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A77284221D12A300A457AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10A77286221D12A300A457AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10A7728B221D12A400A457AB /* OverTimeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A7728B221D12A400A457AB /* OverTimeMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A7728F221D12A400A457AB /* OverTimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverTimeCalculatorTests.swift; sourceTree = "<group>"; };
 		10A77291221D12A400A457AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10A77296221D12A400A457AB /* OverTimeCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A77296221D12A400A457AB /* OverTimeMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A7729A221D12A400A457AB /* OverTimeCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverTimeCalculatorUITests.swift; sourceTree = "<group>"; };
 		10A7729C221D12A400A457AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29AB51EED88B093F1FA8191E /* Pods-OverTimeMasterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMasterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMasterUITests/Pods-OverTimeMasterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C3C00774116B1C27D55D923 /* Pods_OverTimeMaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverTimeMaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D268B2C8B2D9BD1C79B2443 /* Pods-OverTimeMasterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMasterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMasterUITests/Pods-OverTimeMasterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53DA5B2E18ACCE3630CA3207 /* Pods_OverTimeMasterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverTimeMasterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		676A6EF922684C43A2D33BFE /* Pods-OverTimeMasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMasterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMasterTests/Pods-OverTimeMasterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73F69E9695B15184F19C143F /* Pods_OverTimeMasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverTimeMasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CB1B13ABA4DDC53C8A152D /* Pods-OverTimeMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.release.xcconfig"; sourceTree = "<group>"; };
+		BA990A197B05668FDD2F1D85 /* Pods-OverTimeMasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMasterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMasterTests/Pods-OverTimeMasterTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DCD7157DA83A249ABAE528 /* Pods_OverTimeMaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE775237A41DE5B03DDEDF9 /* Pods_OverTimeMasterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83333C8A109B8855E452EFD8 /* Pods_OverTimeMasterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,79 +96,140 @@
 		10A7726C221D12A000A457AB = {
 			isa = PBXGroup;
 			children = (
-				10A77277221D12A000A457AB /* OverTimeCalculator */,
-				10A7728E221D12A400A457AB /* OverTimeCalculatorTests */,
-				10A77299221D12A400A457AB /* OverTimeCalculatorUITests */,
+				10A77277221D12A000A457AB /* OverTimeMaster */,
+				10A7728E221D12A400A457AB /* OverTimeMasterTests */,
+				10A77299221D12A400A457AB /* OverTimeMasterUITests */,
 				10A77276221D12A000A457AB /* Products */,
+				24C26299DDB8E98BFC7C22DD /* Pods */,
+				71416C3A3701070F56F4E1D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		10A77276221D12A000A457AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				10A77275221D12A000A457AB /* OverTimeCalculator.app */,
-				10A7728B221D12A400A457AB /* OverTimeCalculatorTests.xctest */,
-				10A77296221D12A400A457AB /* OverTimeCalculatorUITests.xctest */,
+				10A77275221D12A000A457AB /* OverTimeMaster.app */,
+				10A7728B221D12A400A457AB /* OverTimeMasterTests.xctest */,
+				10A77296221D12A400A457AB /* OverTimeMasterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		10A77277221D12A000A457AB /* OverTimeCalculator */ = {
+		10A77277221D12A000A457AB /* OverTimeMaster */ = {
 			isa = PBXGroup;
 			children = (
+				CB17F62D221F4BEE00B9ABB2 /* Resource */,
+				CB17F62C221F4BD300B9ABB2 /* Controller */,
+				CB17F62A221F4BD300B9ABB2 /* Model */,
+				CB17F62B221F4BD300B9ABB2 /* View */,
 				10A77278221D12A000A457AB /* OTCAppDelegate.swift */,
-				10A7727A221D12A000A457AB /* TimerViewController.swift */,
-				10A7727C221D12A000A457AB /* HistoryViewController.swift */,
-				10A7727E221D12A000A457AB /* Main.storyboard */,
-				10A77281221D12A300A457AB /* Assets.xcassets */,
-				10A77283221D12A300A457AB /* LaunchScreen.storyboard */,
 				10A77286221D12A300A457AB /* Info.plist */,
+				CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */,
 			);
-			path = OverTimeCalculator;
+			path = OverTimeMaster;
 			sourceTree = "<group>";
 		};
-		10A7728E221D12A400A457AB /* OverTimeCalculatorTests */ = {
+		10A7728E221D12A400A457AB /* OverTimeMasterTests */ = {
 			isa = PBXGroup;
 			children = (
 				10A7728F221D12A400A457AB /* OverTimeCalculatorTests.swift */,
 				10A77291221D12A400A457AB /* Info.plist */,
 			);
-			path = OverTimeCalculatorTests;
+			path = OverTimeMasterTests;
 			sourceTree = "<group>";
 		};
-		10A77299221D12A400A457AB /* OverTimeCalculatorUITests */ = {
+		10A77299221D12A400A457AB /* OverTimeMasterUITests */ = {
 			isa = PBXGroup;
 			children = (
 				10A7729A221D12A400A457AB /* OverTimeCalculatorUITests.swift */,
 				10A7729C221D12A400A457AB /* Info.plist */,
 			);
-			path = OverTimeCalculatorUITests;
+			path = OverTimeMasterUITests;
+			sourceTree = "<group>";
+		};
+		24C26299DDB8E98BFC7C22DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */,
+				B8CB1B13ABA4DDC53C8A152D /* Pods-OverTimeMaster.release.xcconfig */,
+				676A6EF922684C43A2D33BFE /* Pods-OverTimeMasterTests.debug.xcconfig */,
+				BA990A197B05668FDD2F1D85 /* Pods-OverTimeMasterTests.release.xcconfig */,
+				29AB51EED88B093F1FA8191E /* Pods-OverTimeMasterUITests.debug.xcconfig */,
+				2D268B2C8B2D9BD1C79B2443 /* Pods-OverTimeMasterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71416C3A3701070F56F4E1D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C3C00774116B1C27D55D923 /* Pods_OverTimeMaster.framework */,
+				73F69E9695B15184F19C143F /* Pods_OverTimeMasterTests.framework */,
+				53DA5B2E18ACCE3630CA3207 /* Pods_OverTimeMasterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB17F62A221F4BD300B9ABB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB17F62B221F4BD300B9ABB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB17F62C221F4BD300B9ABB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				10A7727A221D12A000A457AB /* TimerViewController.swift */,
+				10A7727C221D12A000A457AB /* HistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB17F62D221F4BEE00B9ABB2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				10A7727E221D12A000A457AB /* Main.storyboard */,
+				10A77281221D12A300A457AB /* Assets.xcassets */,
+				10A77283221D12A300A457AB /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		10A77274221D12A000A457AB /* OverTimeCalculator */ = {
+		10A77274221D12A000A457AB /* OverTimeMaster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10A7729F221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculator" */;
+			buildConfigurationList = 10A7729F221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeMaster" */;
 			buildPhases = (
+				63B3A0BCC21C260AA1A438B3 /* [CP] Check Pods Manifest.lock */,
 				10A77271221D12A000A457AB /* Sources */,
 				10A77272221D12A000A457AB /* Frameworks */,
 				10A77273221D12A000A457AB /* Resources */,
+				8C4BD4FF6C5433122E402105 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = OverTimeCalculator;
+			name = OverTimeMaster;
 			productName = OverTimeCalculator;
-			productReference = 10A77275221D12A000A457AB /* OverTimeCalculator.app */;
+			productReference = 10A77275221D12A000A457AB /* OverTimeMaster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		10A7728A221D12A400A457AB /* OverTimeCalculatorTests */ = {
+		10A7728A221D12A400A457AB /* OverTimeMasterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10A772A2221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorTests" */;
+			buildConfigurationList = 10A772A2221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeMasterTests" */;
 			buildPhases = (
+				4D230451E6DEC0B117B8BC52 /* [CP] Check Pods Manifest.lock */,
 				10A77287221D12A400A457AB /* Sources */,
 				10A77288221D12A400A457AB /* Frameworks */,
 				10A77289221D12A400A457AB /* Resources */,
@@ -161,15 +239,16 @@
 			dependencies = (
 				10A7728D221D12A400A457AB /* PBXTargetDependency */,
 			);
-			name = OverTimeCalculatorTests;
+			name = OverTimeMasterTests;
 			productName = OverTimeCalculatorTests;
-			productReference = 10A7728B221D12A400A457AB /* OverTimeCalculatorTests.xctest */;
+			productReference = 10A7728B221D12A400A457AB /* OverTimeMasterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		10A77295221D12A400A457AB /* OverTimeCalculatorUITests */ = {
+		10A77295221D12A400A457AB /* OverTimeMasterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10A772A5221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorUITests" */;
+			buildConfigurationList = 10A772A5221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeMasterUITests" */;
 			buildPhases = (
+				65F9E3F0FAB5A303E91ECD72 /* [CP] Check Pods Manifest.lock */,
 				10A77292221D12A400A457AB /* Sources */,
 				10A77293221D12A400A457AB /* Frameworks */,
 				10A77294221D12A400A457AB /* Resources */,
@@ -179,9 +258,9 @@
 			dependencies = (
 				10A77298221D12A400A457AB /* PBXTargetDependency */,
 			);
-			name = OverTimeCalculatorUITests;
+			name = OverTimeMasterUITests;
 			productName = OverTimeCalculatorUITests;
-			productReference = 10A77296221D12A400A457AB /* OverTimeCalculatorUITests.xctest */;
+			productReference = 10A77296221D12A400A457AB /* OverTimeMasterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +286,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 10A77270221D12A000A457AB /* Build configuration list for PBXProject "OverTimeCalculator" */;
+			buildConfigurationList = 10A77270221D12A000A457AB /* Build configuration list for PBXProject "OverTimeMaster" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +299,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				10A77274221D12A000A457AB /* OverTimeCalculator */,
-				10A7728A221D12A400A457AB /* OverTimeCalculatorTests */,
-				10A77295221D12A400A457AB /* OverTimeCalculatorUITests */,
+				10A77274221D12A000A457AB /* OverTimeMaster */,
+				10A7728A221D12A400A457AB /* OverTimeMasterTests */,
+				10A77295221D12A400A457AB /* OverTimeMasterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A77285221D12A300A457AB /* LaunchScreen.storyboard in Resources */,
+				CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */,
 				10A77282221D12A300A457AB /* Assets.xcassets in Resources */,
 				10A77280221D12A000A457AB /* Main.storyboard in Resources */,
 			);
@@ -253,6 +333,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D230451E6DEC0B117B8BC52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverTimeMasterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B3A0BCC21C260AA1A438B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverTimeMaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F9E3F0FAB5A303E91ECD72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverTimeMasterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C4BD4FF6C5433122E402105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10A77271221D12A000A457AB /* Sources */ = {
@@ -286,12 +459,12 @@
 /* Begin PBXTargetDependency section */
 		10A7728D221D12A400A457AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 10A77274221D12A000A457AB /* OverTimeCalculator */;
+			target = 10A77274221D12A000A457AB /* OverTimeMaster */;
 			targetProxy = 10A7728C221D12A400A457AB /* PBXContainerItemProxy */;
 		};
 		10A77298221D12A400A457AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 10A77274221D12A000A457AB /* OverTimeCalculator */;
+			target = 10A77274221D12A000A457AB /* OverTimeMaster */;
 			targetProxy = 10A77297221D12A400A457AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,17 +607,18 @@
 		};
 		10A772A0221D12A400A457AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WE4Q22B3LN;
-				INFOPLIST_FILE = OverTimeCalculator/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OverTimeMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.4dot.OverTimeCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4dot.overtimemaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -453,17 +627,18 @@
 		};
 		10A772A1221D12A400A457AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8CB1B13ABA4DDC53C8A152D /* Pods-OverTimeMaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WE4Q22B3LN;
-				INFOPLIST_FILE = OverTimeCalculator/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OverTimeMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.4dot.OverTimeCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4dot.overtimemaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -472,6 +647,7 @@
 		};
 		10A772A3221D12A400A457AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676A6EF922684C43A2D33BFE /* Pods-OverTimeMasterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,12 +663,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTimeCalculator.app/OverTimeCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTimeMaster.app/OverTimeMaster";
 			};
 			name = Debug;
 		};
 		10A772A4221D12A400A457AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA990A197B05668FDD2F1D85 /* Pods-OverTimeMasterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,12 +685,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTimeCalculator.app/OverTimeCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTimeMaster.app/OverTimeMaster";
 			};
 			name = Release;
 		};
 		10A772A6221D12A400A457AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29AB51EED88B093F1FA8191E /* Pods-OverTimeMasterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +712,7 @@
 		};
 		10A772A7221D12A400A457AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D268B2C8B2D9BD1C79B2443 /* Pods-OverTimeMasterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,7 +734,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10A77270221D12A000A457AB /* Build configuration list for PBXProject "OverTimeCalculator" */ = {
+		10A77270221D12A000A457AB /* Build configuration list for PBXProject "OverTimeMaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10A7729D221D12A400A457AB /* Debug */,
@@ -564,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10A7729F221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculator" */ = {
+		10A7729F221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeMaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10A772A0221D12A400A457AB /* Debug */,
@@ -573,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10A772A2221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorTests" */ = {
+		10A772A2221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeMasterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10A772A3221D12A400A457AB /* Debug */,
@@ -582,7 +761,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10A772A5221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeCalculatorUITests" */ = {
+		10A772A5221D12A400A457AB /* Build configuration list for PBXNativeTarget "OverTimeMasterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10A772A6221D12A400A457AB /* Debug */,
