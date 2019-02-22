@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10A77279221D12A000A457AB /* OTCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A77278221D12A000A457AB /* OTCAppDelegate.swift */; };
+		10A77279221D12A000A457AB /* OTMAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A77278221D12A000A457AB /* OTMAppDelegate.swift */; };
 		10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7727A221D12A000A457AB /* TimerViewController.swift */; };
 		10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7727C221D12A000A457AB /* HistoryViewController.swift */; };
 		10A77280221D12A000A457AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A7727E221D12A000A457AB /* Main.storyboard */; };
@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		10A77275221D12A000A457AB /* OverTimeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverTimeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		10A77278221D12A000A457AB /* OTCAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTCAppDelegate.swift; sourceTree = "<group>"; };
+		10A77278221D12A000A457AB /* OTMAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTMAppDelegate.swift; sourceTree = "<group>"; };
 		10A7727A221D12A000A457AB /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		10A7727C221D12A000A457AB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		10A7727F221D12A000A457AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +93,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1010252D221FB63D00782A56 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		10A7726C221D12A000A457AB = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +129,8 @@
 				CB17F62C221F4BD300B9ABB2 /* Controller */,
 				CB17F62A221F4BD300B9ABB2 /* Model */,
 				CB17F62B221F4BD300B9ABB2 /* View */,
-				10A77278221D12A000A457AB /* OTCAppDelegate.swift */,
+				1010252D221FB63D00782A56 /* Util */,
+				10A77278221D12A000A457AB /* OTMAppDelegate.swift */,
 				10A77286221D12A300A457AB /* Info.plist */,
 				CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */,
 			);
@@ -409,7 +417,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -422,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -433,7 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */,
-				10A77279221D12A000A457AB /* OTCAppDelegate.swift in Sources */,
+				10A77279221D12A000A457AB /* OTMAppDelegate.swift in Sources */,
 				10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

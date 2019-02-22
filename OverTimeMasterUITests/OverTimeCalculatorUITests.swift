@@ -1,6 +1,6 @@
 //
-//  OverTimeCalculatorUITests.swift
-//  OverTimeCalculatorUITests
+//  OverTimeMasterUITests.swift
+//  OverTimeMasterUITests
 //
 //  Created by chanick park on 2/19/19.
 //  Copyright © 2019 4Dot. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class OverTimeCalculatorUITests: XCTestCase {
+class OverTimeMasterUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

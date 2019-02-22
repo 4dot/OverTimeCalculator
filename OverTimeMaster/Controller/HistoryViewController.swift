@@ -1,6 +1,6 @@
 //
 //  HistoryViewController.swift
-//  OverTimeCalculator
+//  OverTimeMaster
 //
 //  Created by chanick park on 2/19/19.
 //  Copyright © 2019 4Dot. All rights reserved.
