@@ -1,6 +1,6 @@
 //
-//  OTCAppDelegate.swift
-//  OverTimeCalculator
+//  OTMAppDelegate.swift
+//  OverTimeMaster
 //
 //  Created by chanick park on 2/19/19.
 //  Copyright © 2019 4Dot. All rights reserved.
@@ -11,7 +11,7 @@ import Firebase
 
 
 @UIApplicationMain
-class OTCAppDelegate: UIResponder, UIApplicationDelegate {
+class OTMAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
