@@ -19,6 +19,8 @@
 		7EE775237A41DE5B03DDEDF9 /* Pods_OverTimeMasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F69E9695B15184F19C143F /* Pods_OverTimeMasterTests.framework */; };
 		83333C8A109B8855E452EFD8 /* Pods_OverTimeMasterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA5B2E18ACCE3630CA3207 /* Pods_OverTimeMasterUITests.framework */; };
 		CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */; };
+		CB5872F4222F0D8200B28D3A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5872F2222F0D8200B28D3A /* SettingsViewController.swift */; };
+		CB5872F5222F0D8200B28D3A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		B8CB1B13ABA4DDC53C8A152D /* Pods-OverTimeMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.release.xcconfig"; sourceTree = "<group>"; };
 		BA990A197B05668FDD2F1D85 /* Pods-OverTimeMasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMasterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMasterTests/Pods-OverTimeMasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB5872F2222F0D8200B28D3A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +191,8 @@
 		CB17F62C221F4BD300B9ABB2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */,
+				CB5872F2222F0D8200B28D3A /* SettingsViewController.swift */,
 				10A7727A221D12A000A457AB /* TimerViewController.swift */,
 				10A7727C221D12A000A457AB /* HistoryViewController.swift */,
 			);
@@ -411,6 +417,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -418,6 +425,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,9 +440,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5872F5222F0D8200B28D3A /* CalendarViewController.swift in Sources */,
 				10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */,
 				10A77279221D12A000A457AB /* OTCAppDelegate.swift in Sources */,
 				10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */,
+				CB5872F4222F0D8200B28D3A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
