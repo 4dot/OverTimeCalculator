@@ -52,7 +52,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Core
-  - JTAppleCalendar (~> 7.0)
+  - JTAppleCalendar (from `https://github.com/patchthecode/JTAppleCalendar.git`, branch `master`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -62,8 +62,17 @@ SPEC REPOS:
     - FirebaseInstanceID
     - GoogleAppMeasurement
     - GoogleUtilities
-    - JTAppleCalendar
     - nanopb
+
+EXTERNAL SOURCES:
+  JTAppleCalendar:
+    :branch: master
+    :git: https://github.com/patchthecode/JTAppleCalendar.git
+
+CHECKOUT OPTIONS:
+  JTAppleCalendar:
+    :commit: 1d9e3d0b4d8fbd0649da8cb6c9f1de2374c51cde
+    :git: https://github.com/patchthecode/JTAppleCalendar.git
 
 SPEC CHECKSUMS:
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
@@ -75,6 +84,6 @@ SPEC CHECKSUMS:
   JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 137264ae2d49839f681db82b9322c142da5b3595
+PODFILE CHECKSUM: 025a0d7e85ec075cbd5a30e5974b04e0999a51ba
 
 COCOAPODS: 1.5.3

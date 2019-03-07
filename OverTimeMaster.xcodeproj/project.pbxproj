@@ -21,6 +21,14 @@
 		CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */; };
 		CB5872F4222F0D8200B28D3A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5872F2222F0D8200B28D3A /* SettingsViewController.swift */; };
 		CB5872F5222F0D8200B28D3A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */; };
+		CB5873142231CA4900B28D3A /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB58730E2231CA4900B28D3A /* ScheduleTableViewCell.xib */; };
+		CB5873162231CA4900B28D3A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873102231CA4900B28D3A /* ScheduleTableViewCell.swift */; };
+		CB5873172231CA4900B28D3A /* DateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873122231CA4900B28D3A /* DateCellView.swift */; };
+		CB5873182231CA4900B28D3A /* DateCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5873132231CA4900B28D3A /* DateCellView.xib */; };
+		CB58731E2231CD9F00B28D3A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58731D2231CD9F00B28D3A /* Schedule.swift */; };
+		CB5873202231D47E00B28D3A /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */; };
+		CB5873232231D62E00B28D3A /* UIColor+OTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */; };
+		CB5873242231D62E00B28D3A /* UIView+GestureClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,14 @@
 		CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB5872F2222F0D8200B28D3A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		CB58730E2231CA4900B28D3A /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		CB5873102231CA4900B28D3A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		CB5873122231CA4900B28D3A /* DateCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCellView.swift; sourceTree = "<group>"; };
+		CB5873132231CA4900B28D3A /* DateCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCellView.xib; sourceTree = "<group>"; };
+		CB58731D2231CD9F00B28D3A /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OTColor.swift"; sourceTree = "<group>"; };
+		CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GestureClosure.swift"; sourceTree = "<group>"; };
 		D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,13 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1010252D221FB63D00782A56 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		10A7726C221D12A000A457AB = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +142,7 @@
 				CB17F62C221F4BD300B9ABB2 /* Controller */,
 				CB17F62A221F4BD300B9ABB2 /* Model */,
 				CB17F62B221F4BD300B9ABB2 /* View */,
-				1010252D221FB63D00782A56 /* Util */,
+				CB5873192231CA8D00B28D3A /* Util */,
 				10A77278221D12A000A457AB /* OTMAppDelegate.swift */,
 				10A77286221D12A300A457AB /* Info.plist */,
 				CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */,
@@ -185,6 +194,8 @@
 		CB17F62A221F4BD300B9ABB2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB58731D2231CD9F00B28D3A /* Schedule.swift */,
+				CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +203,8 @@
 		CB17F62B221F4BD300B9ABB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CB5873112231CA4900B28D3A /* DateCellView */,
+				CB58730D2231CA4900B28D3A /* ScheduleView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +228,41 @@
 				10A77283221D12A300A457AB /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		CB58730D2231CA4900B28D3A /* ScheduleView */ = {
+			isa = PBXGroup;
+			children = (
+				CB58730E2231CA4900B28D3A /* ScheduleTableViewCell.xib */,
+				CB5873102231CA4900B28D3A /* ScheduleTableViewCell.swift */,
+			);
+			path = ScheduleView;
+			sourceTree = "<group>";
+		};
+		CB5873112231CA4900B28D3A /* DateCellView */ = {
+			isa = PBXGroup;
+			children = (
+				CB5873122231CA4900B28D3A /* DateCellView.swift */,
+				CB5873132231CA4900B28D3A /* DateCellView.xib */,
+			);
+			path = DateCellView;
+			sourceTree = "<group>";
+		};
+		CB5873192231CA8D00B28D3A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CB58731A2231CA8D00B28D3A /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CB58731A2231CA8D00B28D3A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */,
+				CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +377,8 @@
 				CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */,
 				10A77282221D12A300A457AB /* Assets.xcassets in Resources */,
 				10A77280221D12A000A457AB /* Main.storyboard in Resources */,
+				CB5873182231CA4900B28D3A /* DateCellView.xib in Resources */,
+				CB5873142231CA4900B28D3A /* ScheduleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,10 +498,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5873162231CA4900B28D3A /* ScheduleTableViewCell.swift in Sources */,
+				CB5873242231D62E00B28D3A /* UIView+GestureClosure.swift in Sources */,
 				CB5872F5222F0D8200B28D3A /* CalendarViewController.swift in Sources */,
+				CB5873202231D47E00B28D3A /* ScheduleViewModel.swift in Sources */,
+				CB58731E2231CD9F00B28D3A /* Schedule.swift in Sources */,
 				10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */,
+				CB5873172231CA4900B28D3A /* DateCellView.swift in Sources */,
 				10A77279221D12A000A457AB /* OTMAppDelegate.swift in Sources */,
 				10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */,
+				CB5873232231D62E00B28D3A /* UIColor+OTColor.swift in Sources */,
 				CB5872F4222F0D8200B28D3A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

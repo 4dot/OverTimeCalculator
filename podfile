@@ -7,7 +7,7 @@ target 'OverTimeMaster' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 
   pod 'Firebase/Core'
-  pod 'JTAppleCalendar', '~> 7.0'
+  pod 'JTAppleCalendar', :git => 'https://github.com/patchthecode/JTAppleCalendar.git', :branch => 'master'
   
   target 'OverTimeMasterTests' do
     inherit! :search_paths
