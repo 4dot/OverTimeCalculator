@@ -47,7 +47,7 @@ class CalendarViewController : UIViewController {
     let dateFormatterString = "yyyy MM dd"
     let numOfRowsInCalendar = 6
     let numOfRandomEvent = 100
-    let calendarCellIdentifier = "CellView"
+    let calendarCellIdentifier = "DateCellView"
     let scheduleCellIdentifier = "detail"
     
     var iii: Date?
@@ -80,7 +80,7 @@ class CalendarViewController : UIViewController {
         calendarView.addGestureRecognizer(gesturer)
     }
     
-    func handleLongPress(gesture : UILongPressGestureRecognizer) {
+    @objc func handleLongPress(gesture : UILongPressGestureRecognizer) {
         let point = gesture.location(in: calendarView)
         guard let cellStatus = calendarView.cellStatus(at: point) else {
             return
@@ -93,7 +93,7 @@ class CalendarViewController : UIViewController {
     }
     
     func setupViewNibs() {
-        let myNib = UINib(nibName: "CellView", bundle: Bundle.main)
+        let myNib = UINib(nibName: "DateCellView", bundle: Bundle.main)
         calendarView.register(myNib, forCellWithReuseIdentifier: calendarCellIdentifier)
         
         
@@ -127,7 +127,7 @@ extension CalendarViewController {
 
 // MARK: Button events
 extension CalendarViewController {
-    func showTodayWithAnimate() {
+    @objc func showTodayWithAnimate() {
         showToday(animate: true)
     }
     
@@ -179,7 +179,7 @@ extension CalendarViewController {
 // MARK: CalendarCell's ui config
 extension CalendarViewController {
     func configureCell(view: JTAppleCell?, cellState: CellState) {
-        guard let myCustomCell = view as? CellView else { return }
+        guard let myCustomCell = view as? DateCellView else { return }
         
         myCustomCell.dayLabel.text = cellState.text
         let cellHidden = cellState.dateBelongsTo != .thisMonth
@@ -202,11 +202,11 @@ extension CalendarViewController {
         }
     }
     
-    func handleCellSelection(view: CellView, cellState: CellState) {
+    func handleCellSelection(view: DateCellView, cellState: CellState) {
         view.selectedView.isHidden = !cellState.isSelected
     }
     
-    func handleCellTextColor(view: CellView, cellState: CellState) {
+    func handleCellTextColor(view: DateCellView, cellState: CellState) {
         if cellState.isSelected {
             view.dayLabel.textColor = UIColor.white
         }
@@ -253,12 +253,12 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
 // MARK: JTAppleCalendarViewDelegate
 extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! CellView
+        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateCellView
         configureCell(view: cell, cellState: cellState)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! CellView
+        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateCellView
         configureCell(view: cell, cellState: cellState)
         return cell
     }

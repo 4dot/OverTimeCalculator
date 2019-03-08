@@ -253,7 +253,7 @@
                                     <constraint firstAttribute="height" constant="30" id="RcJ-Fx-PKN"/>
                                 </constraints>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xl3-E0-JQt" customClass="JTAppleCalendarView">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xl3-E0-JQt" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
                                 <rect key="frame" x="0.0" y="101" width="375" height="321"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -275,9 +275,20 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="ibCalendarDataSource" destination="8rJ-Kc-sve" id="1N4-kq-Bmg"/>
+                                    <outlet property="ibCalendarDelegate" destination="8rJ-Kc-sve" id="fC5-XV-mOi"/>
+                                </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-Zl-7RB" userLabel="divider">
+                                <rect key="frame" x="0.0" y="422" width="375" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="XUT-IH-EYR"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CdL-Rz-SZK">
-                                <rect key="frame" x="0.0" y="422" width="375" height="152"/>
+                                <rect key="frame" x="0.0" y="423" width="375" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detail" rowHeight="50" id="IoI-NU-RKV" customClass="ScheduleTableViewCell" customModule="OverTimeMaster" customModuleProvider="target">
@@ -289,6 +300,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="KyD-HH-in4"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="qLd-KU-STY"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI1-in-qwS">
                                 <rect key="frame" x="0.0" y="574" width="375" height="44"/>
@@ -303,18 +318,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cI1-in-qwS" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="62D-ZW-mTy"/>
+                            <constraint firstItem="KaV-Zl-7RB" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="80F-tu-7Tn"/>
                             <constraint firstItem="Xl3-E0-JQt" firstAttribute="top" secondItem="Ha9-NQ-kku" secondAttribute="bottom" id="9mm-6Y-Vnz"/>
                             <constraint firstItem="Xl3-E0-JQt" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="CZC-Jh-RWI"/>
                             <constraint firstItem="Ha9-NQ-kku" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="G2w-2t-Bld"/>
                             <constraint firstItem="CdL-Rz-SZK" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="HYg-lW-xit"/>
                             <constraint firstItem="cI1-in-qwS" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="JBn-m1-PhR"/>
-                            <constraint firstItem="CdL-Rz-SZK" firstAttribute="top" secondItem="Xl3-E0-JQt" secondAttribute="bottom" id="KyC-uc-dA8"/>
                             <constraint firstItem="cI1-in-qwS" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="N22-Xn-CQ4"/>
                             <constraint firstItem="Xl3-E0-JQt" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="QM1-JU-Zpa"/>
+                            <constraint firstItem="KaV-Zl-7RB" firstAttribute="top" secondItem="Xl3-E0-JQt" secondAttribute="bottom" id="TGe-6G-ExI"/>
                             <constraint firstItem="CdL-Rz-SZK" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="W11-qg-tAB"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="CdL-Rz-SZK" secondAttribute="trailing" id="WCC-ma-TOC"/>
                             <constraint firstItem="CdL-Rz-SZK" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="WPG-3F-mfm"/>
                             <constraint firstItem="cI1-in-qwS" firstAttribute="top" secondItem="CdL-Rz-SZK" secondAttribute="bottom" id="WQK-4P-tXU"/>
+                            <constraint firstItem="CdL-Rz-SZK" firstAttribute="top" secondItem="KaV-Zl-7RB" secondAttribute="bottom" id="jXr-w1-tyB"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="KaV-Zl-7RB" secondAttribute="trailing" id="k8I-uR-65z"/>
                             <constraint firstItem="cai-QA-FcQ" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="pUX-WZ-3Vz"/>
                             <constraint firstItem="cai-QA-FcQ" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="pa8-FH-99w"/>
                             <constraint firstItem="cai-QA-FcQ" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="vPB-0o-JFE"/>
@@ -324,6 +342,12 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="calendarView" destination="Xl3-E0-JQt" id="rLf-I4-nft"/>
+                        <outlet property="separatorViewTopConstraint" destination="TGe-6G-ExI" id="2vj-qs-T1q"/>
+                        <outlet property="showTodayButton" destination="cyN-fv-Ra2" id="Ono-L8-NFa"/>
+                        <outlet property="tableView" destination="CdL-Rz-SZK" id="sew-fX-1eo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
