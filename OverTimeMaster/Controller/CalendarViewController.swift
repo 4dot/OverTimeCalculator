@@ -46,8 +46,8 @@ class CalendarViewController : UIViewController {
         let dateFormatterString = "yyyy MM dd"
         let numOfRowsInCalendar = 6
         let numOfRandomEvent = 100
-        let calendarCellIdentifier = "CellView"
-        let scheduleCellIdentifier = "detail"
+        let calendarCellIdentifier = "DateCellView"
+        let scheduleCellIdentifier = "ScheduleTableViewCell"
         
         var iii: Date?
         
@@ -92,8 +92,8 @@ class CalendarViewController : UIViewController {
         }
         
         func setupViewNibs() {
-            let myNib = UINib(nibName: "CellView", bundle: Bundle.main)
-            calendarView.register(myNib, forCellWithReuseIdentifier: calendarCellIdentifier)
+            //let myNib = UINib(nibName: "DateCellView", bundle: Bundle.main)
+            //calendarView.register(myNib, forCellWithReuseIdentifier: calendarCellIdentifier)
             
             
             let myNib2 = UINib(nibName: "ScheduleTableViewCell", bundle: Bundle.main)
@@ -178,7 +178,7 @@ class CalendarViewController : UIViewController {
     // MARK: CalendarCell's ui config
     extension CalendarViewController {
         func configureCell(view: JTAppleCell?, cellState: CellState) {
-            guard let myCustomCell = view as? CellView else { return }
+            guard let myCustomCell = view as? DateCellView else { return }
             
             myCustomCell.dayLabel.text = cellState.text
             let cellHidden = cellState.dateBelongsTo != .thisMonth
@@ -201,11 +201,11 @@ class CalendarViewController : UIViewController {
             }
         }
         
-        func handleCellSelection(view: CellView, cellState: CellState) {
+        func handleCellSelection(view: DateCellView, cellState: CellState) {
             view.selectedView.isHidden = !cellState.isSelected
         }
         
-        func handleCellTextColor(view: CellView, cellState: CellState) {
+        func handleCellTextColor(view: DateCellView, cellState: CellState) {
             if cellState.isSelected {
                 view.dayLabel.textColor = UIColor.white
             }
@@ -252,12 +252,14 @@ class CalendarViewController : UIViewController {
     // MARK: JTAppleCalendarViewDelegate
     extension CalendarViewController: JTAppleCalendarViewDelegate {
         func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-            let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! CellView
+            //let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateCellView
+            let cell = calendar.dequeueReusable(cellClass: DateCellView.self, for: indexPath)
             configureCell(view: cell, cellState: cellState)
         }
         
         func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-            let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! CellView
+            //let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateCellView
+            let cell = calendar.dequeueReusable(cellClass: DateCellView.self, for: indexPath)
             configureCell(view: cell, cellState: cellState)
             return cell
         }
@@ -296,7 +298,8 @@ class CalendarViewController : UIViewController {
     // MARK: UITableViewDataSource
     extension CalendarViewController : UITableViewDataSource {
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: scheduleCellIdentifier, for: indexPath) as! ScheduleTableViewCell
+            //let cell = tableView.dequeueReusableCell(withIdentifier: scheduleCellIdentifier, for: indexPath) as! ScheduleTableViewCell
+            let cell = tableView.dequeueReusable(cellClass: ScheduleTableViewCell.self, for: indexPath)
             cell.selectionStyle = .none
             cell.schedule = schedules[indexPath.row]
             return cell

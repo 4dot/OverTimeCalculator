@@ -23,12 +23,14 @@
 		CB5872F5222F0D8200B28D3A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */; };
 		CB5873142231CA4900B28D3A /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB58730E2231CA4900B28D3A /* ScheduleTableViewCell.xib */; };
 		CB5873162231CA4900B28D3A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873102231CA4900B28D3A /* ScheduleTableViewCell.swift */; };
-		CB5873172231CA4900B28D3A /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873122231CA4900B28D3A /* CellView.swift */; };
-		CB5873182231CA4900B28D3A /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5873132231CA4900B28D3A /* CellView.xib */; };
+		CB5873172231CA4900B28D3A /* DateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873122231CA4900B28D3A /* DateCellView.swift */; };
+		CB5873182231CA4900B28D3A /* DateCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5873132231CA4900B28D3A /* DateCellView.xib */; };
 		CB58731E2231CD9F00B28D3A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58731D2231CD9F00B28D3A /* Schedule.swift */; };
 		CB5873202231D47E00B28D3A /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */; };
 		CB5873232231D62E00B28D3A /* UIColor+OTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */; };
 		CB5873242231D62E00B28D3A /* UIView+GestureClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */; };
+		CB803E8E22443D5100FBA85A /* UICollectionView+OGCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E8C22443D5000FBA85A /* UICollectionView+OGCollectionView.swift */; };
+		CB803E8F22443D5100FBA85A /* UITableView+OGTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E8D22443D5100FBA85A /* UITableView+OGTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,12 +78,14 @@
 		CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		CB58730E2231CA4900B28D3A /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		CB5873102231CA4900B28D3A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
-		CB5873122231CA4900B28D3A /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
-		CB5873132231CA4900B28D3A /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		CB5873122231CA4900B28D3A /* DateCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCellView.swift; sourceTree = "<group>"; };
+		CB5873132231CA4900B28D3A /* DateCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCellView.xib; sourceTree = "<group>"; };
 		CB58731D2231CD9F00B28D3A /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OTColor.swift"; sourceTree = "<group>"; };
 		CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GestureClosure.swift"; sourceTree = "<group>"; };
+		CB803E8C22443D5000FBA85A /* UICollectionView+OGCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+OGCollectionView.swift"; sourceTree = "<group>"; };
+		CB803E8D22443D5100FBA85A /* UITableView+OGTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+OGTableView.swift"; sourceTree = "<group>"; };
 		D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,8 +246,8 @@
 		CB5873112231CA4900B28D3A /* DateCellView */ = {
 			isa = PBXGroup;
 			children = (
-				CB5873122231CA4900B28D3A /* CellView.swift */,
-				CB5873132231CA4900B28D3A /* CellView.xib */,
+				CB5873122231CA4900B28D3A /* DateCellView.swift */,
+				CB5873132231CA4900B28D3A /* DateCellView.xib */,
 			);
 			path = DateCellView;
 			sourceTree = "<group>";
@@ -259,6 +263,8 @@
 		CB58731A2231CA8D00B28D3A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CB803E8C22443D5000FBA85A /* UICollectionView+OGCollectionView.swift */,
+				CB803E8D22443D5100FBA85A /* UITableView+OGTableView.swift */,
 				CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */,
 				CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */,
 			);
@@ -377,7 +383,7 @@
 				CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */,
 				10A77282221D12A300A457AB /* Assets.xcassets in Resources */,
 				10A77280221D12A000A457AB /* Main.storyboard in Resources */,
-				CB5873182231CA4900B28D3A /* CellView.xib in Resources */,
+				CB5873182231CA4900B28D3A /* DateCellView.xib in Resources */,
 				CB5873142231CA4900B28D3A /* ScheduleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +510,9 @@
 				CB5873202231D47E00B28D3A /* ScheduleViewModel.swift in Sources */,
 				CB58731E2231CD9F00B28D3A /* Schedule.swift in Sources */,
 				10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */,
-				CB5873172231CA4900B28D3A /* CellView.swift in Sources */,
+				CB5873172231CA4900B28D3A /* DateCellView.swift in Sources */,
+				CB803E8E22443D5100FBA85A /* UICollectionView+OGCollectionView.swift in Sources */,
+				CB803E8F22443D5100FBA85A /* UITableView+OGTableView.swift in Sources */,
 				10A77279221D12A000A457AB /* OTMAppDelegate.swift in Sources */,
 				10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */,
 				CB5873232231D62E00B28D3A /* UIColor+OTColor.swift in Sources */,

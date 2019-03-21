@@ -266,19 +266,78 @@
                                     <constraint firstAttribute="height" constant="321" id="IgC-Rh-5ss"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="B9p-ko-QxC">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="73" height="58"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellView" id="XNj-Jb-Z6D" customClass="CellView" customModule="OverTimeMaster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DateCellView" id="pPi-u8-IAg" customClass="DateCellView" customModule="OverTimeMaster" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="73" height="58"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-rV-Npf" userLabel="line">
+                                                    <rect key="frame" x="0.0" y="0.0" width="73" height="1"/>
+                                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="eUQ-91-tV2"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIK-WB-l9j" userLabel="Selected View">
+                                                    <rect key="frame" x="21.5" y="5" width="30" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="2Rg-8Y-2A9"/>
+                                                        <constraint firstAttribute="width" constant="30" id="D3S-jP-GI2"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-2n-pQL">
+                                                    <rect key="frame" x="27.5" y="9.5" width="18.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Cb-X1-15C">
+                                                    <rect key="frame" x="33.5" y="38" width="6" height="6"/>
+                                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="6" id="T28-89-UsR"/>
+                                                        <constraint firstAttribute="height" constant="6" id="it5-qC-eFm"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="qc6-2n-pQL" firstAttribute="centerY" secondItem="DIK-WB-l9j" secondAttribute="centerY" id="0hi-YO-OfS"/>
+                                            <constraint firstItem="qc6-2n-pQL" firstAttribute="centerX" secondItem="DIK-WB-l9j" secondAttribute="centerX" id="18e-g1-uXT"/>
+                                            <constraint firstItem="2Cb-X1-15C" firstAttribute="top" secondItem="DIK-WB-l9j" secondAttribute="bottom" constant="3" id="1J4-Eo-40c"/>
+                                            <constraint firstItem="2Cb-X1-15C" firstAttribute="centerX" secondItem="DIK-WB-l9j" secondAttribute="centerX" id="46K-Yj-YGq"/>
+                                            <constraint firstItem="dFs-rV-Npf" firstAttribute="top" secondItem="pPi-u8-IAg" secondAttribute="top" id="7YM-Y7-shs"/>
+                                            <constraint firstItem="dFs-rV-Npf" firstAttribute="leading" secondItem="pPi-u8-IAg" secondAttribute="leading" id="Aa7-yv-osG"/>
+                                            <constraint firstAttribute="trailing" secondItem="dFs-rV-Npf" secondAttribute="trailing" id="J1k-CC-vmw"/>
+                                            <constraint firstItem="DIK-WB-l9j" firstAttribute="top" secondItem="pPi-u8-IAg" secondAttribute="top" constant="5" id="gnv-jT-NTz"/>
+                                            <constraint firstItem="DIK-WB-l9j" firstAttribute="centerX" secondItem="pPi-u8-IAg" secondAttribute="centerX" id="xX8-t2-bOQ"/>
+                                        </constraints>
+                                        <size key="customSize" width="73" height="58"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="qc6-2n-pQL" id="d83-h1-iOL"/>
+                                            <outlet property="eventView" destination="2Cb-X1-15C" id="3z1-QL-nNn"/>
+                                            <outlet property="selectedView" destination="DIK-WB-l9j" id="bsH-9I-N3D"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

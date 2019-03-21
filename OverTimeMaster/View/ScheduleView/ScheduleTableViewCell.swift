@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ScheduleTableViewCell: UITableViewCell {
+class ScheduleTableViewCell: UITableViewCell, Reusable {
+    static var reuseIdentifier: String = "ScheduleTableViewCell"
 
     @IBOutlet weak var categoryLine: UIView!
     @IBOutlet weak var startTimeLabel: UILabel!
