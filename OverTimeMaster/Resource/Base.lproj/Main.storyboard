@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="4144" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +13,10 @@
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController storyboardIdentifier="TimerViewController" title="Timer" id="9pv-A4-QxB" customClass="TimerViewController" customModule="OverTimeMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rIk-Nq-JSw"/>
+                        <viewControllerLayoutGuide type="bottom" id="8wy-7L-yTQ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +159,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Timer" image="first" id="acW-dT-cKf"/>
                 </viewController>
@@ -168,6 +170,10 @@
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController storyboardIdentifier="CalendarViewController" title="Calendar" id="8rJ-Kc-sve" userLabel="Calendar" customClass="CalendarViewController" customModule="OverTimeMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wpr-wE-x7V"/>
+                        <viewControllerLayoutGuide type="bottom" id="R1a-Kn-o66"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,20 +259,20 @@
                                     <constraint firstAttribute="height" constant="30" id="RcJ-Fx-PKN"/>
                                 </constraints>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xl3-E0-JQt" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xl3-E0-JQt" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
                                 <rect key="frame" x="0.0" y="101" width="375" height="321"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="321" id="IgC-Rh-5ss"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B9p-ko-QxC">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="B9p-ko-QxC">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XNj-Jb-Z6D" customClass="DateCellView" customModule="OverTimeMaster" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellView" id="XNj-Jb-Z6D" customClass="CellView" customModule="OverTimeMaster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -276,8 +282,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="ibCalendarDataSource" destination="8rJ-Kc-sve" id="1N4-kq-Bmg"/>
-                                    <outlet property="ibCalendarDelegate" destination="8rJ-Kc-sve" id="fC5-XV-mOi"/>
+                                    <outlet property="ibCalendarDataSource" destination="8rJ-Kc-sve" id="EKK-aj-6si"/>
+                                    <outlet property="ibCalendarDelegate" destination="8rJ-Kc-sve" id="wy8-rd-x35"/>
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-Zl-7RB" userLabel="divider">
@@ -317,29 +323,28 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cI1-in-qwS" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="62D-ZW-mTy"/>
-                            <constraint firstItem="KaV-Zl-7RB" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="80F-tu-7Tn"/>
+                            <constraint firstItem="cI1-in-qwS" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="62D-ZW-mTy"/>
+                            <constraint firstItem="KaV-Zl-7RB" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="80F-tu-7Tn"/>
                             <constraint firstItem="Xl3-E0-JQt" firstAttribute="top" secondItem="Ha9-NQ-kku" secondAttribute="bottom" id="9mm-6Y-Vnz"/>
-                            <constraint firstItem="Xl3-E0-JQt" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="CZC-Jh-RWI"/>
-                            <constraint firstItem="Ha9-NQ-kku" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="G2w-2t-Bld"/>
+                            <constraint firstItem="Xl3-E0-JQt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="CZC-Jh-RWI"/>
+                            <constraint firstItem="Ha9-NQ-kku" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="G2w-2t-Bld"/>
                             <constraint firstItem="CdL-Rz-SZK" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="HYg-lW-xit"/>
-                            <constraint firstItem="cI1-in-qwS" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="JBn-m1-PhR"/>
-                            <constraint firstItem="cI1-in-qwS" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="N22-Xn-CQ4"/>
-                            <constraint firstItem="Xl3-E0-JQt" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="QM1-JU-Zpa"/>
+                            <constraint firstItem="cI1-in-qwS" firstAttribute="bottom" secondItem="R1a-Kn-o66" secondAttribute="top" id="JBn-m1-PhR"/>
+                            <constraint firstItem="cI1-in-qwS" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailing" id="N22-Xn-CQ4"/>
+                            <constraint firstItem="Xl3-E0-JQt" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailing" id="QM1-JU-Zpa"/>
                             <constraint firstItem="KaV-Zl-7RB" firstAttribute="top" secondItem="Xl3-E0-JQt" secondAttribute="bottom" id="TGe-6G-ExI"/>
-                            <constraint firstItem="CdL-Rz-SZK" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="W11-qg-tAB"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="CdL-Rz-SZK" secondAttribute="trailing" id="WCC-ma-TOC"/>
-                            <constraint firstItem="CdL-Rz-SZK" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="WPG-3F-mfm"/>
+                            <constraint firstItem="CdL-Rz-SZK" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="W11-qg-tAB"/>
+                            <constraint firstAttribute="trailing" secondItem="CdL-Rz-SZK" secondAttribute="trailing" id="WCC-ma-TOC"/>
+                            <constraint firstItem="CdL-Rz-SZK" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailing" id="WPG-3F-mfm"/>
                             <constraint firstItem="cI1-in-qwS" firstAttribute="top" secondItem="CdL-Rz-SZK" secondAttribute="bottom" id="WQK-4P-tXU"/>
                             <constraint firstItem="CdL-Rz-SZK" firstAttribute="top" secondItem="KaV-Zl-7RB" secondAttribute="bottom" id="jXr-w1-tyB"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="KaV-Zl-7RB" secondAttribute="trailing" id="k8I-uR-65z"/>
+                            <constraint firstAttribute="trailing" secondItem="KaV-Zl-7RB" secondAttribute="trailing" id="k8I-uR-65z"/>
                             <constraint firstItem="cai-QA-FcQ" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="pUX-WZ-3Vz"/>
-                            <constraint firstItem="cai-QA-FcQ" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="pa8-FH-99w"/>
-                            <constraint firstItem="cai-QA-FcQ" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="vPB-0o-JFE"/>
+                            <constraint firstItem="cai-QA-FcQ" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailing" id="pa8-FH-99w"/>
+                            <constraint firstItem="cai-QA-FcQ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="vPB-0o-JFE"/>
                             <constraint firstItem="Ha9-NQ-kku" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="vXG-9j-zyk"/>
                             <constraint firstItem="Ha9-NQ-kku" firstAttribute="top" secondItem="cai-QA-FcQ" secondAttribute="bottom" constant="1" id="xSW-1f-34T"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="second" id="cPa-gy-q4n"/>
                     <connections>
@@ -377,11 +382,14 @@
         <scene sceneID="UxE-HI-ePn">
             <objects>
                 <viewController storyboardIdentifier="HistoryViewController" title="History" id="oGP-3Z-8bt" customClass="HistoryViewController" customModule="OverTimeMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lqc-wc-YGs"/>
+                        <viewControllerLayoutGuide type="bottom" id="9rF-iW-c3w"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zce-qZ-5fc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="voR-cC-XuP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="second" id="EOs-eo-H2Z"/>
                 </viewController>
@@ -393,11 +401,14 @@
         <scene sceneID="2yt-Eg-Vop">
             <objects>
                 <viewController id="8H7-SU-phx" userLabel="add event" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="emK-3P-1MH"/>
+                        <viewControllerLayoutGuide type="bottom" id="RjD-0J-GzA"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rW3-Gu-wQh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="oWV-C0-aFy"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfq-lJ-5UY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -408,11 +419,14 @@
         <scene sceneID="4Jk-h3-6LI">
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" title="Settings" id="Dr4-fo-tAg" userLabel="Settings" customClass="SettingsViewController" customModule="OverTimeMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V0e-TZ-W3Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="OEL-OA-aGz"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PHY-Ko-0tl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="vqv-WU-MNh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="second" id="Tcm-np-8oX"/>
                 </viewController>
