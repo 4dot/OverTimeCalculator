@@ -15,14 +15,18 @@ import JTAppleCalendar
 // CalendarViewController
 //
 class CalendarViewController : UIViewController {
-        // MARK: Outlets
-        @IBOutlet weak var calendarView: JTAppleCalendarView!
-        @IBOutlet weak var tableView: UITableView!
-        @IBOutlet weak var showTodayButton: UIBarButtonItem!
-        
-        @IBOutlet weak var separatorViewTopConstraint: NSLayoutConstraint!
-        
-        // MARK: DataSource
+    
+    // MARK: Outlets
+    @IBOutlet weak var calendarView: JTAppleCalendarView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var showTodayButton: UIBarButtonItem!
+    
+    @IBOutlet weak var separatorViewTopConstraint: NSLayoutConstraint!
+    
+    // MARK: DataSource
+    lazy var scheduleViewModel: ScheduleViewModel = ScheduleViewModel()
+    
+    
         var scheduleGroup : [String : [Schedule]]? {
             didSet {
                 calendarView.reloadData()
@@ -253,7 +257,6 @@ class CalendarViewController : UIViewController {
     // MARK: JTAppleCalendarViewDelegate
     extension CalendarViewController: JTAppleCalendarViewDelegate {
         func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-            //let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateViewCell
             let cell = calendar.dequeueReusable(cellClass: DateViewCell.self, for: indexPath)
             configureCell(view: cell, cellState: cellState)
         }
