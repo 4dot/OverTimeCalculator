@@ -10,18 +10,22 @@ import UIKit
 
 struct Schedule {
     var title: String
+    var subTitle: String
     var note: String
     var startTime: Date
     var endTime: Date
     var categoryColor: UIColor
+    var category: String
 }
 
 // random events
 extension Schedule {
     init(fromStartDate: Date) {
         title = ["Meet Willard", "Buy a milk", "Read a book"].randomValue()
+        subTitle = ["Meet Willard", "Buy a milk", "Read a book"].randomValue()
         note = ["hurry", "In office", "In New york city"].randomValue()
         categoryColor = [.red, .orange, .purple, .blue, .black].randomValue()
+        category = ["school", "hospital", "office", "traffic"].randomValue()
         
         let day = [Int](0...27).randomValue()
         let hour = [Int](0...23).randomValue()

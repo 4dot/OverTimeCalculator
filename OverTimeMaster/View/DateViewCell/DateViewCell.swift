@@ -1,5 +1,5 @@
 //
-//  DateCellView.swift
+//  DateViewCell.swift
 //  WLAppleCalendar
 //
 //  Created by willard on 2017/9/19.
@@ -9,8 +9,9 @@
 import UIKit
 import JTAppleCalendar
 
-class DateCellView: JTAppleCell, Reusable {
-    static var reuseIdentifier: String = "DateCellView"
+
+class DateViewCell: JTAppleCell, Reusable {
+    static var reuseIdentifier: String = "DateViewCell"
     
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var eventView: UIView!

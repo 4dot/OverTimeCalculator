@@ -10,6 +10,10 @@ import UIKit
 import JTAppleCalendar
 
 
+
+//
+// CalendarViewController
+//
 class CalendarViewController : UIViewController {
         // MARK: Outlets
         @IBOutlet weak var calendarView: JTAppleCalendarView!
@@ -19,7 +23,7 @@ class CalendarViewController : UIViewController {
         @IBOutlet weak var separatorViewTopConstraint: NSLayoutConstraint!
         
         // MARK: DataSource
-        var scheduleGroup : [String: [Schedule]]? {
+        var scheduleGroup : [String : [Schedule]]? {
             didSet {
                 calendarView.reloadData()
                 tableView.reloadData()
@@ -46,9 +50,7 @@ class CalendarViewController : UIViewController {
         let dateFormatterString = "yyyy MM dd"
         let numOfRowsInCalendar = 6
         let numOfRandomEvent = 100
-        let calendarCellIdentifier = "DateCellView"
-        let scheduleCellIdentifier = "ScheduleTableViewCell"
-        
+    
         var iii: Date?
         
         // MARK: Helpers
@@ -92,12 +94,11 @@ class CalendarViewController : UIViewController {
         }
         
         func setupViewNibs() {
-            //let myNib = UINib(nibName: "DateCellView", bundle: Bundle.main)
-            //calendarView.register(myNib, forCellWithReuseIdentifier: calendarCellIdentifier)
+            let dateCell = UINib(nibName: "DateViewCell", bundle: Bundle.main)
+            calendarView.register(dateCell, forCellWithReuseIdentifier: DateViewCell.reuseIdentifier)
             
-            
-            let myNib2 = UINib(nibName: "ScheduleTableViewCell", bundle: Bundle.main)
-            tableView.register(myNib2, forCellReuseIdentifier: scheduleCellIdentifier)
+            let scheduleCell = UINib(nibName: "ScheduleTableViewCell", bundle: Bundle.main)
+            tableView.register(scheduleCell, forCellReuseIdentifier: ScheduleTableViewCell.reuseIdentifier)
         }
         
         func setupViewsOfCalendar(from visibleDates: DateSegmentInfo) {
@@ -178,7 +179,7 @@ class CalendarViewController : UIViewController {
     // MARK: CalendarCell's ui config
     extension CalendarViewController {
         func configureCell(view: JTAppleCell?, cellState: CellState) {
-            guard let myCustomCell = view as? DateCellView else { return }
+            guard let myCustomCell = view as? DateViewCell else { return }
             
             myCustomCell.dayLabel.text = cellState.text
             let cellHidden = cellState.dateBelongsTo != .thisMonth
@@ -201,11 +202,11 @@ class CalendarViewController : UIViewController {
             }
         }
         
-        func handleCellSelection(view: DateCellView, cellState: CellState) {
+        func handleCellSelection(view: DateViewCell, cellState: CellState) {
             view.selectedView.isHidden = !cellState.isSelected
         }
         
-        func handleCellTextColor(view: DateCellView, cellState: CellState) {
+        func handleCellTextColor(view: DateViewCell, cellState: CellState) {
             if cellState.isSelected {
                 view.dayLabel.textColor = UIColor.white
             }
@@ -252,14 +253,14 @@ class CalendarViewController : UIViewController {
     // MARK: JTAppleCalendarViewDelegate
     extension CalendarViewController: JTAppleCalendarViewDelegate {
         func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-            //let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateCellView
-            let cell = calendar.dequeueReusable(cellClass: DateCellView.self, for: indexPath)
+            //let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateViewCell
+            let cell = calendar.dequeueReusable(cellClass: DateViewCell.self, for: indexPath)
             configureCell(view: cell, cellState: cellState)
         }
         
         func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-            //let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateCellView
-            let cell = calendar.dequeueReusable(cellClass: DateCellView.self, for: indexPath)
+            //let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calendarCellIdentifier, for: indexPath) as! DateViewCell
+            let cell = calendar.dequeueReusable(cellClass: DateViewCell.self, for: indexPath)
             configureCell(view: cell, cellState: cellState)
             return cell
         }
