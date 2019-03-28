@@ -11,21 +11,21 @@ import JTAppleCalendar
 
 
 
-///
-var scheduledDayFormatString: String = "yyyy MM dd"
-
-
-
 class ScheduleViewModel {
     // [date : [schedule]] day only
     var scheduleGroup: [String : [Schedule]] = [:]
     
     
+    // helper
+    func dayOnly(date: Date) -> String {
+        return date.toString(Settings.dayFormat)
+    }
+    
     
     
     // MARK: - public
     func getSchedules(with date: Date) -> [Schedule] {
-        guard let data = scheduleGroup[date.toString(scheduledDayFormatString)] else {
+        guard let data = scheduleGroup[dayOnly(date: date)] else {
             return []
         }
         return data.sorted()
@@ -39,28 +39,25 @@ class ScheduleViewModel {
             schedules.append(Schedule(fromStartDate: fromDate))
         }
         
-        scheduleGroup = schedules.group{ $0.startTime.toString(scheduledDayFormatString) }
+        scheduleGroup = schedules.group{ self.dayOnly(date: $0.startTime) }
     }
 }
 
 extension ScheduleViewModel {
     // MARK: - cell configures
     
-    func dateCellConfigure(cell: DateViewCell, cellState: CellState) -> UICollectionViewCell {
+    @discardableResult func dateCellConfigure(cell: DateViewCell, cellState: CellState) -> DateViewCell {
         cell.dayLabel.text = cellState.text
         let cellHidden = cellState.dateBelongsTo != .thisMonth
         
         cell.isHidden = cellHidden
         cell.selectedView.backgroundColor = UIColor.black
+        cell.selectedView.isHidden = !cellState.isSelected
         
-        if Calendar.current.isDateInToday(cellState.date) {
-            cell.selectedView.backgroundColor = UIColor.red
-        }
+        setCellColor(cellState: cellState, cell: cell)
         
-        //handleCellTextColor(view: myCustomCell, cellState: cellState)
-        //handleCellSelection(view: myCustomCell, cellState: cellState)
         
-        if scheduleGroup[cellState.date.toString(scheduledDayFormatString)] != nil {
+        if scheduleGroup[dayOnly(date: cellState.date)] != nil {
             cell.eventView.isHidden = false
         }
         else {
@@ -70,10 +67,27 @@ extension ScheduleViewModel {
         return cell
     }
     
-    func scheduleCellConfigure(cell: ScheduleTableViewCell, selectedDate: Date, indexPath: IndexPath) -> UITableViewCell {
-        let schedules = getSchedules(with: selectedDate)
+    fileprivate func setCellColor(cellState: CellState, cell: DateViewCell) {
+        cell.dayLabel.textColor = cellState.isSelected ? .white : .black
         
-        guard let schedule = schedules[safe: indexPath.row] else {
+        // check today
+        if Calendar.current.isDateInToday(cellState.date) {
+            cell.selectedView.backgroundColor = .red
+            cell.dayLabel.textColor = cellState.isSelected ? .white : .red
+        }
+        
+        if cellState.isSelected == false {
+            if cellState.day == .sunday || cellState.day == .saturday {
+                cell.dayLabel.textColor = UIColor.gray
+            }
+        }
+    }
+    
+    @discardableResult func scheduleCellConfigure(cell: ScheduleTableViewCell, selectedDate: Date?, indexPath: IndexPath) -> UITableViewCell {
+        cell.selectionStyle = .none
+        
+        guard let selectedDate = selectedDate,
+              let schedule = getSchedules(with: selectedDate)[safe: indexPath.row] else {
             return cell
         }
         

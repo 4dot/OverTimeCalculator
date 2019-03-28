@@ -19,20 +19,25 @@
 		7EE775237A41DE5B03DDEDF9 /* Pods_OverTimeMasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F69E9695B15184F19C143F /* Pods_OverTimeMasterTests.framework */; };
 		83333C8A109B8855E452EFD8 /* Pods_OverTimeMasterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA5B2E18ACCE3630CA3207 /* Pods_OverTimeMasterUITests.framework */; };
 		CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */; };
+		CB26E74C224C1ED6007A0F0C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB26E74B224C1ED6007A0F0C /* FontAwesome.ttf */; };
 		CB5872F4222F0D8200B28D3A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5872F2222F0D8200B28D3A /* SettingsViewController.swift */; };
 		CB5872F5222F0D8200B28D3A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */; };
 		CB5873142231CA4900B28D3A /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB58730E2231CA4900B28D3A /* ScheduleTableViewCell.xib */; };
 		CB5873162231CA4900B28D3A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873102231CA4900B28D3A /* ScheduleTableViewCell.swift */; };
 		CB5873172231CA4900B28D3A /* DateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873122231CA4900B28D3A /* DateViewCell.swift */; };
-		CB5873182231CA4900B28D3A /* DateViewCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5873132231CA4900B28D3A /* DateViewCel.xib */; };
-		CB58731E2231CD9F00B28D3A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58731D2231CD9F00B28D3A /* Schedule.swift */; };
-		CB5873202231D47E00B28D3A /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */; };
+		CB5873182231CA4900B28D3A /* DateViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5873132231CA4900B28D3A /* DateViewCell.xib */; };
 		CB5873232231D62E00B28D3A /* UIColor+OTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */; };
 		CB5873242231D62E00B28D3A /* UIView+GestureClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */; };
 		CB803E8E22443D5100FBA85A /* UICollectionView+OGCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E8C22443D5000FBA85A /* UICollectionView+OGCollectionView.swift */; };
 		CB803E8F22443D5100FBA85A /* UITableView+OGTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E8D22443D5100FBA85A /* UITableView+OGTableView.swift */; };
 		CB803E9122457A7300FBA85A /* Date+OTDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E9022457A7300FBA85A /* Date+OTDate.swift */; };
 		CB803E9322457D9700FBA85A /* Array+OTArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E9222457D9700FBA85A /* Array+OTArray.swift */; };
+		CB803E9A22495B5200FBA85A /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E9822495B5200FBA85A /* ScheduleViewModel.swift */; };
+		CB803E9B22495B5200FBA85A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E9922495B5200FBA85A /* Schedule.swift */; };
+		CB803E9D22495B7900FBA85A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803E9C22495B7900FBA85A /* Observable.swift */; };
+		CB803EA122495C4100FBA85A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803EA022495C4100FBA85A /* Settings.swift */; };
+		CB803EA322495D4F00FBA85A /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803EA222495D4F00FBA85A /* String+Date.swift */; };
+		CB803EA622495F2100FBA85A /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803EA522495F2100FBA85A /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,20 +81,25 @@
 		B8CB1B13ABA4DDC53C8A152D /* Pods-OverTimeMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.release.xcconfig"; sourceTree = "<group>"; };
 		BA990A197B05668FDD2F1D85 /* Pods-OverTimeMasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMasterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMasterTests/Pods-OverTimeMasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB26E74B224C1ED6007A0F0C /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		CB5872F2222F0D8200B28D3A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CB5872F3222F0D8200B28D3A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		CB58730E2231CA4900B28D3A /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		CB5873102231CA4900B28D3A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		CB5873122231CA4900B28D3A /* DateViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewCell.swift; sourceTree = "<group>"; };
-		CB5873132231CA4900B28D3A /* DateViewCel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateViewCel.xib; sourceTree = "<group>"; };
-		CB58731D2231CD9F00B28D3A /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		CB5873132231CA4900B28D3A /* DateViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateViewCell.xib; sourceTree = "<group>"; };
 		CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OTColor.swift"; sourceTree = "<group>"; };
 		CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GestureClosure.swift"; sourceTree = "<group>"; };
 		CB803E8C22443D5000FBA85A /* UICollectionView+OGCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+OGCollectionView.swift"; sourceTree = "<group>"; };
 		CB803E8D22443D5100FBA85A /* UITableView+OGTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+OGTableView.swift"; sourceTree = "<group>"; };
 		CB803E9022457A7300FBA85A /* Date+OTDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+OTDate.swift"; sourceTree = "<group>"; };
 		CB803E9222457D9700FBA85A /* Array+OTArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+OTArray.swift"; sourceTree = "<group>"; };
+		CB803E9822495B5200FBA85A /* ScheduleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		CB803E9922495B5200FBA85A /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		CB803E9C22495B7900FBA85A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CB803EA022495C4100FBA85A /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		CB803EA222495D4F00FBA85A /* String+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		CB803EA522495F2100FBA85A /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +161,7 @@
 				CB17F628221F499B00B9ABB2 /* GoogleService-Info.plist */,
 				CB17F62D221F4BEE00B9ABB2 /* Resource */,
 				CB17F62C221F4BD300B9ABB2 /* Controller */,
-				CB17F62A221F4BD300B9ABB2 /* Model */,
+				CB803E9722495B5200FBA85A /* ViewModel */,
 				CB17F62B221F4BD300B9ABB2 /* View */,
 				CB5873192231CA8D00B28D3A /* Util */,
 			);
@@ -199,15 +209,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB17F62A221F4BD300B9ABB2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CB58731D2231CD9F00B28D3A /* Schedule.swift */,
-				CB58731F2231D47E00B28D3A /* ScheduleViewModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		CB17F62B221F4BD300B9ABB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,11 +232,20 @@
 		CB17F62D221F4BEE00B9ABB2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				CB26E74A224C1ED6007A0F0C /* Font */,
 				10A7727E221D12A000A457AB /* Main.storyboard */,
 				10A77281221D12A300A457AB /* Assets.xcassets */,
 				10A77283221D12A300A457AB /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		CB26E74A224C1ED6007A0F0C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CB26E74B224C1ED6007A0F0C /* FontAwesome.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		CB58730D2231CA4900B28D3A /* ScheduleView */ = {
@@ -251,7 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5873122231CA4900B28D3A /* DateViewCell.swift */,
-				CB5873132231CA4900B28D3A /* DateViewCel.xib */,
+				CB5873132231CA4900B28D3A /* DateViewCell.xib */,
 			);
 			path = DateViewCell;
 			sourceTree = "<group>";
@@ -259,6 +269,7 @@
 		CB5873192231CA8D00B28D3A /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				CB803EA422495F2100FBA85A /* Protocol */,
 				CB58731A2231CA8D00B28D3A /* Extension */,
 			);
 			path = Util;
@@ -269,12 +280,32 @@
 			children = (
 				CB803E9222457D9700FBA85A /* Array+OTArray.swift */,
 				CB803E9022457A7300FBA85A /* Date+OTDate.swift */,
+				CB803EA222495D4F00FBA85A /* String+Date.swift */,
 				CB803E8C22443D5000FBA85A /* UICollectionView+OGCollectionView.swift */,
 				CB803E8D22443D5100FBA85A /* UITableView+OGTableView.swift */,
 				CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */,
 				CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CB803E9722495B5200FBA85A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB803E9C22495B7900FBA85A /* Observable.swift */,
+				CB803EA022495C4100FBA85A /* Settings.swift */,
+				CB803E9922495B5200FBA85A /* Schedule.swift */,
+				CB803E9822495B5200FBA85A /* ScheduleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB803EA422495F2100FBA85A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CB803EA522495F2100FBA85A /* Singleton.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,10 +417,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A77285221D12A300A457AB /* LaunchScreen.storyboard in Resources */,
+				CB26E74C224C1ED6007A0F0C /* FontAwesome.ttf in Resources */,
 				CB17F629221F499B00B9ABB2 /* GoogleService-Info.plist in Resources */,
 				10A77282221D12A300A457AB /* Assets.xcassets in Resources */,
 				10A77280221D12A000A457AB /* Main.storyboard in Resources */,
-				CB5873182231CA4900B28D3A /* DateViewCel.xib in Resources */,
+				CB5873182231CA4900B28D3A /* DateViewCell.xib in Resources */,
 				CB5873142231CA4900B28D3A /* ScheduleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,18 +542,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB803E9D22495B7900FBA85A /* Observable.swift in Sources */,
 				CB5873162231CA4900B28D3A /* ScheduleTableViewCell.swift in Sources */,
+				CB803EA622495F2100FBA85A /* Singleton.swift in Sources */,
 				CB5873242231D62E00B28D3A /* UIView+GestureClosure.swift in Sources */,
+				CB803EA122495C4100FBA85A /* Settings.swift in Sources */,
 				CB5872F5222F0D8200B28D3A /* CalendarViewController.swift in Sources */,
+				CB803E9B22495B5200FBA85A /* Schedule.swift in Sources */,
+				CB803E9A22495B5200FBA85A /* ScheduleViewModel.swift in Sources */,
 				CB803E9122457A7300FBA85A /* Date+OTDate.swift in Sources */,
-				CB5873202231D47E00B28D3A /* ScheduleViewModel.swift in Sources */,
 				CB803E9322457D9700FBA85A /* Array+OTArray.swift in Sources */,
-				CB58731E2231CD9F00B28D3A /* Schedule.swift in Sources */,
 				10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */,
 				CB5873172231CA4900B28D3A /* DateViewCell.swift in Sources */,
 				CB803E8E22443D5100FBA85A /* UICollectionView+OGCollectionView.swift in Sources */,
 				CB803E8F22443D5100FBA85A /* UITableView+OGTableView.swift in Sources */,
 				10A77279221D12A000A457AB /* OTMAppDelegate.swift in Sources */,
+				CB803EA322495D4F00FBA85A /* String+Date.swift in Sources */,
 				10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */,
 				CB5873232231D62E00B28D3A /* UIColor+OTColor.swift in Sources */,
 				CB5872F4222F0D8200B28D3A /* SettingsViewController.swift in Sources */,
