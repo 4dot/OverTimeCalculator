@@ -14,6 +14,9 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var subTitleLbl: UILabel!
     
     
+    lazy var timerStatusMgr = TimerStatusManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +27,17 @@ class TimerViewController: UIViewController {
     
     fileprivate func setTitle(date: Date, options: [String]) {
         
+    }
+}
+
+extension TimerViewController {
+    // MARK: - status buttons
+    fileprivate func addStatus(_ status: TimerStatus) {
+        timerStatusMgr.addStatus(status)
+    }
+    
+    fileprivate func removeStatus(_ status: TimerStatus) {
+        timerStatusMgr.removeStatus(status)
     }
 }
 

@@ -38,6 +38,8 @@
 		CB803EA122495C4100FBA85A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803EA022495C4100FBA85A /* Settings.swift */; };
 		CB803EA322495D4F00FBA85A /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803EA222495D4F00FBA85A /* String+Date.swift */; };
 		CB803EA622495F2100FBA85A /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803EA522495F2100FBA85A /* Singleton.swift */; };
+		CBD7A55E22651E5F00BFCB5C /* UIButton+OTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7A55D22651E5E00BFCB5C /* UIButton+OTButton.swift */; };
+		CBD7A56222667CB400BFCB5C /* TimerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7A56122667CB400BFCB5C /* TimerStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		CB803EA022495C4100FBA85A /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		CB803EA222495D4F00FBA85A /* String+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		CB803EA522495F2100FBA85A /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		CBD7A55D22651E5E00BFCB5C /* UIButton+OTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+OTButton.swift"; sourceTree = "<group>"; };
+		CBD7A56122667CB400BFCB5C /* TimerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatus.swift; sourceTree = "<group>"; };
 		D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +289,7 @@
 				CB803E8D22443D5100FBA85A /* UITableView+OGTableView.swift */,
 				CB5873212231D62E00B28D3A /* UIColor+OTColor.swift */,
 				CB5873222231D62E00B28D3A /* UIView+GestureClosure.swift */,
+				CBD7A55D22651E5E00BFCB5C /* UIButton+OTButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				CB803EA022495C4100FBA85A /* Settings.swift */,
 				CB803E9922495B5200FBA85A /* Schedule.swift */,
 				CB803E9822495B5200FBA85A /* ScheduleViewModel.swift */,
+				CBD7A56122667CB400BFCB5C /* TimerStatus.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -544,6 +550,7 @@
 			files = (
 				CB803E9D22495B7900FBA85A /* Observable.swift in Sources */,
 				CB5873162231CA4900B28D3A /* ScheduleTableViewCell.swift in Sources */,
+				CBD7A55E22651E5F00BFCB5C /* UIButton+OTButton.swift in Sources */,
 				CB803EA622495F2100FBA85A /* Singleton.swift in Sources */,
 				CB5873242231D62E00B28D3A /* UIView+GestureClosure.swift in Sources */,
 				CB803EA122495C4100FBA85A /* Settings.swift in Sources */,
@@ -552,6 +559,7 @@
 				CB803E9A22495B5200FBA85A /* ScheduleViewModel.swift in Sources */,
 				CB803E9122457A7300FBA85A /* Date+OTDate.swift in Sources */,
 				CB803E9322457D9700FBA85A /* Array+OTArray.swift in Sources */,
+				CBD7A56222667CB400BFCB5C /* TimerStatus.swift in Sources */,
 				10A7727D221D12A000A457AB /* HistoryViewController.swift in Sources */,
 				CB5873172231CA4900B28D3A /* DateViewCell.swift in Sources */,
 				CB803E8E22443D5100FBA85A /* UICollectionView+OGCollectionView.swift in Sources */,
