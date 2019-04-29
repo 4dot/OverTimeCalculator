@@ -14,7 +14,7 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var subTitleLbl: UILabel!
     
     
-    lazy var timerStatusMgr = TimerStatusManager()
+    lazy var timerStatusMgr = TimerStatusManager(OTSetting.defaultTimerStatus)
     
     
     override func viewDidLoad() {

@@ -40,6 +40,7 @@
 		CB803EA622495F2100FBA85A /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB803EA522495F2100FBA85A /* Singleton.swift */; };
 		CBD7A55E22651E5F00BFCB5C /* UIButton+OTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7A55D22651E5E00BFCB5C /* UIButton+OTButton.swift */; };
 		CBD7A56222667CB400BFCB5C /* TimerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7A56122667CB400BFCB5C /* TimerStatus.swift */; };
+		CBF3DAD0227397950059312B /* OTDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF3DACF227397950059312B /* OTDefines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		CB803EA522495F2100FBA85A /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		CBD7A55D22651E5E00BFCB5C /* UIButton+OTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+OTButton.swift"; sourceTree = "<group>"; };
 		CBD7A56122667CB400BFCB5C /* TimerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatus.swift; sourceTree = "<group>"; };
+		CBF3DACF227397950059312B /* OTDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTDefines.swift; sourceTree = "<group>"; };
 		D08CBF794D272410EB155F3F /* Pods-OverTimeMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverTimeMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OverTimeMaster/Pods-OverTimeMaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,6 +277,7 @@
 			children = (
 				CB803EA422495F2100FBA85A /* Protocol */,
 				CB58731A2231CA8D00B28D3A /* Extension */,
+				CBF3DACF227397950059312B /* OTDefines.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				CB803E8E22443D5100FBA85A /* UICollectionView+OGCollectionView.swift in Sources */,
 				CB803E8F22443D5100FBA85A /* UITableView+OGTableView.swift in Sources */,
 				10A77279221D12A000A457AB /* OTMAppDelegate.swift in Sources */,
+				CBF3DAD0227397950059312B /* OTDefines.swift in Sources */,
 				CB803EA322495D4F00FBA85A /* String+Date.swift in Sources */,
 				10A7727B221D12A000A457AB /* TimerViewController.swift in Sources */,
 				CB5873232231D62E00B28D3A /* UIColor+OTColor.swift in Sources */,

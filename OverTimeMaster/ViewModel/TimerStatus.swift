@@ -9,17 +9,26 @@
 import Foundation
 
 
-enum TimerStatus : String {
-    case OverTime = "Overtime"
-    case RDO = "RDO"
-    case Extra = "Extra"
-}
+//enum TimerStatus : String {
+//    case OverTime = "Overtime"
+//    case RDO = "RDO"
+//    case Extra = "Extra"
+//}
+
+typealias TimerStatus = String
 
 
 class TimerStatusManager {
     var status: [TimerStatus] = []
     
     
+    
+    // MARK: - init
+    init(_ status: [TimerStatus]) {
+        self.status = status
+    }
+    
+    // MARK: - public
     
     func addStatus(_ status: TimerStatus) {
         if !self.status.contains(status) {
@@ -31,5 +40,9 @@ class TimerStatusManager {
         if let idx = self.status.index(of: status) {
             self.status.remove(at: idx)
         }
+    }
+    
+    func isExistStatus(_ status: TimerStatus) -> Bool {
+        return self.status.index(of: status) != nil ? true : false
     }
 }
