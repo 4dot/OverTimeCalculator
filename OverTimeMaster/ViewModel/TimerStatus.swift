@@ -10,7 +10,8 @@ import Foundation
 
 
 //enum TimerStatus : String {
-//    case OverTime = "Overtime"
+//    case WorkingTime = "WorkingTime"
+//    case OverTime = "OverTime"
 //    case RDO = "RDO"
 //    case Extra = "Extra"
 //}

@@ -14,7 +14,7 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var subTitleLbl: UILabel!
     
     
-    lazy var timerStatusMgr = TimerStatusManager(OTSetting.defaultTimerStatus)
+    lazy var timerStatusMgr = TimerStatusManager(OTSetting.shared.TimerStatusList)
     
     
     override func viewDidLoad() {
@@ -32,6 +32,7 @@ class TimerViewController: UIViewController {
 
 extension TimerViewController {
     // MARK: - status buttons
+    
     fileprivate func addStatus(_ status: TimerStatus) {
         timerStatusMgr.addStatus(status)
     }
