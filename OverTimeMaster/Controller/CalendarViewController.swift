@@ -17,7 +17,7 @@ import JTAppleCalendar
 class CalendarViewController : UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var calendarView: JTAppleCalendarView!
+    @IBOutlet weak var calendarView: JTACMonthView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var showTodayButton: UIBarButtonItem!
     
@@ -160,10 +160,10 @@ extension CalendarViewController {
     }
 }
 
-// MARK: - JTAppleCalendarViewDataSource
+// MARK: - JTACMonthViewDataSource
 
-extension CalendarViewController: JTAppleCalendarViewDataSource {
-    func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
+extension CalendarViewController: JTACMonthViewDataSource {
+    func configureCalendar(_ calendar: JTACMonthView) -> ConfigurationParameters {
         let parameters = ConfigurationParameters(startDate: Settings.calendarStartDate,
                                                  endDate: Settings.calendarEndDate,
                                                  numberOfRows: Settings.numOfRowsInCalendar,
@@ -176,20 +176,20 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
     }
 }
 
-// MARK: - JTAppleCalendarViewDelegate
+// MARK: - JTACMonthViewDelegate
 
-extension CalendarViewController: JTAppleCalendarViewDelegate {
-    func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
+extension CalendarViewController: JTACMonthViewDelegate {
+    func calendar(_ calendar: JTACMonthView, willDisplay cell: JTACDayCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
         let cell = calendar.dequeueReusable(cellClass: DateViewCell.self, for: indexPath)
         scheduleViewModel.dateCellConfigure(cell: cell, cellState: cellState)
     }
     
-    func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
+    func calendar(_ calendar: JTACMonthView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTACDayCell {
         let cell = calendar.dequeueReusable(cellClass: DateViewCell.self, for: indexPath)
         return scheduleViewModel.dateCellConfigure(cell: cell, cellState: cellState)
     }
     
-    func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
+    func calendar(_ calendar: JTACMonthView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         setupViewsOfCalendar(from: visibleDates)
         if visibleDates.monthDates.first?.date == firstDateInMonth {
             return
@@ -209,7 +209,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         }
     }
     
-    func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+    func calendar(_ calendar: JTACMonthView, didSelectDate date: Date, cell: JTACDayCell?, cellState: CellState) {
         if let dateCell = cell as? DateViewCell {
             scheduleViewModel.dateCellConfigure(cell: dateCell, cellState: cellState)
         }
@@ -217,7 +217,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         tableView.contentOffset = .zero
     }
     
-    func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+    func calendar(_ calendar: JTACMonthView, didDeselectDate date: Date, cell: JTACDayCell?, cellState: CellState) {
         if let dateCell = cell as? DateViewCell {
             scheduleViewModel.dateCellConfigure(cell: dateCell, cellState: cellState)
         }
@@ -246,7 +246,7 @@ extension CalendarViewController : UITableViewDelegate {
             let schedules = scheduleViewModel.getSchedules(with: selectedDate)
             let schedule = schedules[safe: indexPath.row]
             
-            print(schedule)
+            //print(schedule)
             print("schedule selected")
         }
     }
