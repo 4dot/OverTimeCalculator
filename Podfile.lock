@@ -44,7 +44,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.5.0):
     - GoogleUtilities/Logger
-  - JTAppleCalendar (7.1.7)
+  - JTAppleCalendar (8.0.3)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -53,10 +53,10 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Core
-  - JTAppleCalendar (~> 7.0)
+  - JTAppleCalendar (~> 8.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -73,9 +73,9 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: cf488df2f4b79782f0e430b04a0e17c0aa7979b2
   GoogleAppMeasurement: 1624046ab1bcc5e170061a56ef5679000b079c8e
   GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
-  JTAppleCalendar: 96da4d8388fa6dc82d6a60d41ef36a015e167e2f
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 8a42fffbbe3400b5236997e738d6fed7bff3f8e0
+PODFILE CHECKSUM: 09238974229c4dac9054dca94ceeebd2b2664cee
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.1

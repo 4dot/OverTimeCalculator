@@ -37,12 +37,12 @@ class TimerStatusManager {
     }
     
     func removeStatus(_ status: TimerStatus) {
-        if let idx = self.status.index(of: status) {
+        if let idx = self.status.firstIndex(of: status) {
             self.status.remove(at: idx)
         }
     }
     
     func isExistStatus(_ status: TimerStatus) -> Bool {
-        return self.status.index(of: status) != nil ? true : false
+        return self.status.firstIndex(of: status) != nil ? true : false
     }
 }

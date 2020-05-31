@@ -10,7 +10,7 @@ import UIKit
 import JTAppleCalendar
 
 
-class DateViewCell: JTAppleCell, Reusable {
+class DateViewCell: JTACDayCell, Reusable {
     static var reuseIdentifier: String = "DateViewCell"
     
     @IBOutlet weak var dayLabel: UILabel!
