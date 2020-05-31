@@ -9,8 +9,16 @@
 import Foundation
 
 
-class OTSetting {
+final class OTSetting : Singleton {
+    static var shared: OTSetting {
+        struct Singleton {
+            static let instance = OTSetting()
+        }
+        return Singleton.instance
+    }
     
-    
-    static var defaultTimerStatus = ["OverTime", "RDO"]
+    var TimerStatusList = [
+        "WorkingTime",
+        "OverTime",
+        "RDO"]
 }
